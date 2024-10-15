@@ -1,0 +1,251 @@
+NOTES CSS 
+
+Commande de base : 
+  
+  - height : hauteur de l'élelemnt
+  - width : largeur 
+  - background-color : color background 
+  - display : inline-block = élément les uns a la suite de l'autre (a utiliser sur l'élément direct) ❌ CREE DES ESPACES ENTRE LES ÉLÉMENTS A EVITER ❌
+  - display : inline = éléments collés les uns aux autres  
+  - display : flex = permets d'aligner les éléments (se place sur l'element parent) ⚠️ A FAVORISER ⚠️
+  - justify-content : flex-end = coller son élément au bout a droite 
+  - justify-content : center = mettre son élément au centre 
+  - justify-content : space-beetween = permet de mettre ses éléments avec le meme ecart partout
+  - gap : permets de mettre des espace entre des éléments en controlant l'espacement 
+  - display : flex-direction = permets de mettre les éléments les uns en dessous des autres 
+  - flex-direction : columne = permets de mettre les éléments les uns en dessous des autres 
+  - box-sizing : border-box = permets de supprimer toutes les marges de bases 
+  - align-item : center = permets de center les éléments 
+  - flex-start : Les éléments s'alignent au côté gauche du conteneur.
+  - flex-end : Les éléments s'alignent au côté droit du conteneur.
+  - center : Les éléments s'alignent au centre du conteneur.
+  - space-between : Les éléments s'affichent avec un espace égal entre eux.
+  - space-around : Les éléments s'affichent avec un espacement égal à l'entour d'eux.
+  - stretch : Les éléments sont étirés pour s'adapter au conteneur.
+  - baseline : Les éléments s'alignent à la ligne de base du conteneur.
+  - row : Les éléments sont disposés dans la même direction que le texte.
+  - row-reverse : Les éléments sont disposés dans la direction opposée au texte.
+  - column : Les éléments sont disposés de haut en bas.
+  - column-reverse : Les éléments sont disposés de bas en haut.
+  - order Parfois, inverser l'ordre de la rangée ou la colonne ne suffit pas. Dans ces cas, on peut appliquer la propriété order à des éléments individuels. Par défaut, les éléments ont une valeur de 0, mais on peut utiliser cette propriété pour changer la valeur à un entier positif ou négatif.
+  - align-self : Une autre propriété que vous pouvez appliquer sur des éléments individuels est align-self. Cette propriété accepte les mêmes valeurs que align-items, mais s'applique seulement à l'élément ciblé.
+  - nowrap : Tous les éléments sont tenus sur une seule ligne.
+  - wrap : Les éléments s'enveloppent sur plusieurs lignes au besoin.
+  - wrap-reverse : Les éléments s'enveloppent sur plusieurs lignes dans l'ordre inversé.
+  - flex-flow : Les deux propriétés flex-direction et flex-wrap sont utilisées tellement souvent ensembles que le raccourci flex-flow a été créé pour les combiner. Ce raccourci accepte les valeurs des deux propriétés séparées par un espace.
+  - grid-row : valeur debut/valeur fin: deplacer avec grid
+  - grid-column : valeur debut/valeur fin: 
+  - grid-area : valeur debut row/ valeur debut column/ valeur row fin/valeur column fin :
+  - background-size: cover : pour que l'image fasse la taille de la page 
+  - background-repeat: no-repeat : l'image ne se repete pas      
+  - background-position: center : l'image est centree 
+  - height: 50vh;
+background-image: url() : mettre une image en background 
+
+VARIABLES CSS
+
+
+:root{
+--nomdelavar : valeur 
+
+} 
+background-color : var(--nomdelavar) 
+
+:root --> permet de selectionner la toute premeiere class de la page (applique la variable a toute la page html)
+var(--nomdelavar) --> permet d'applique la valeur definie dans la var du meme nom 
+
+  --space : 8px;                          --> valeur variable de base   (8px)
+  --space-2 : calc(var(--space)*2);       --> valeur de base X2         (16px)
+  --space-4 : calc(var(--space-2)*2);     --> valeur 2 X 2              (32px)
+
+
+ANIMATIONS CSS
+
+TRANSITIONS ➡️
+
+  .cat-img{
+	width:200px; }    --> largeur de base 
+.cat-img:hover{
+	width:500px;  }   --> la largeur augmante quand on passe dessus 
+  
+ :hover : permets d'agrandir une image quand on passe la souris dessus 
+  
+
+ .cat-img:hover{
+	transition: property duration curve; } --> a positionner au niveau du :hover 
+
+  property --> a definir (height/width)
+  duration --> duree de lanimation (en ms)
+  curve --> le style de l'animation (linear/ease in/ease out/ease in out)
+
+TRASFORM 🪄
+
+  - transform: rotate(10deg) --> Pour appliquer une rotation sur un élément
+  - transform: scale(1.5) --> Tu peux changer l'échelle
+  - transform : translate(200px,200px) --> Tu peux déplacer un élément horizontalement et verticalement en utilisant transform. Celle-ci est utile quand tu veux faire bouger tes élément
+  - transform: skew(20deg,10deg) --> Skewing permet d'incliner l'élément
+  - transform: rotate(10deg) scale(1.5); --> Tu peux combiner plusieurs propriétés en une seule fois dans ta transformation :
+  
+ANIMATIONS 🐇
+
+@keyframes slideIn {
+  from {                              -->From est l'état de départ de l'élément
+    transform: translate(0px, 0px);   --> décalage de 0px
+  }
+  to {                                -->to est l'état de l'élément souhaité à la fin de l'animation
+    transform: translate(200px, 0px); --> décalage de 200px 
+  }
+}
+
+.my-div{
+	animation-name:slideIn;         --> nom de l'animation (en haut slideIn)
+	animation-duration:1s;}          --> duree de l'animation (1s)
+
+
+  - Ensuite, pour appliquer l'animation à un élément, il suffit d'appliquer la propriétés animation-name et `animation-duration
+
+  - animation-iteration-count: infinite;    --> a placer dans le selecteur
+  - animation-iteration-count: 3;           --> a placer dans le selecteur
+
+    - Tu peux aussi ajouter une propriété animation-iteration-count pour definir le nombre d'itération souhaité.
+
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0px, 0px); --> Ici, nous utilisons des pourcentages, les pourcentages représentent le % de l'animation.
+  }
+  50% {
+    transform: translate(200px, 0px); --> Ici, nous utilisons des pourcentages, les pourcentages représentent le % de l'animation.
+  }
+  100% {
+    transform: translate(0px, 0px);}} --> Ici, nous utilisons des pourcentages, les pourcentages représentent le % de l'animation.
+
+  - Tu peux utiliser les pourcentages que tu veux pour personnaliser ton animation 
+  
+  
+#dog-img{
+  animation-name:mouve;
+  animation-duration:4s ;
+  animation-iteration-count: infinite;}
+@keyframes mouve{
+  0%{transform: translate(0px, 0px) rotate(0deg)  scale(1);}
+  50%{transform: translate(300px, 400px) rotate(180deg) scale(1.3);}
+  100%{transform: translate(0px, 0px ) rotate(0deg) scale(1);}}  
+  
+  - Te permets mettre plusieurs animation en meme temps 
+  
+
+MEDIA QUERIES   
+  
+- @media screen and (max-width: 550px){} : permets de changer les parametre des éléments lorsque ils sont ouvert sur une page de 0px-550px
+
+
+
+NOTES HTML
+
+  Commande de base : 
+
+  - <link href="style.css" rel="stylesheet"> 
+  - <h1>/<p> : balise block
+  - <strong> : balise inline
+  - <img/> : balise auto fermante --> ⚠️ ne pas oublier le alt 
+  - <button disable="true"> : permet de na pas activer le bouton 
+  - <a href="about.html"></a> : permet de relier 2 page entre elle avec un lien hypertxt
+  - <!-- commentaire --> : permet de commenter son html 
+  - <meta name="description" content="commentaire"> : permet de mettre un nom de createur et une description sur le html 
+  - <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> : favicon 
+  - <h1> --> <h6> : balise de titre de 1 à 6 dans l'ordre d'importance 
+  - <em></em> : pour mettre en italique dans une phrase 
+  - <strong></strong> : pour mettre en gras dans une phrase 
+  - <blockquote cite="liencitation">text</blockquote> : permets de mettre une citation sur une partie de la phrase 
+  - <abbr title="WorldWildWeb">WWW</abbr> : permet d'expliquer/dire quand il y a des abréviations
+  - <p>Retourner sur la <a href="home.html">page d'accueil</a></p> : lien hyper text pour retourner a la page home 
+  - <p>Visiter notre <a href="https://facebook.com/wildcodeschool">page facebook</a></p> : liens hypertxt pour rediriger sur un autre site 
+  - <p>Visiter notre <a href="https://facebook.com/wildcodeschool">page facebook</a></p>
+    <a href="#citation">citation</a>                    : permets de mettre une redirection d'une citation sur une partie du site 
+  - <p><a href="mailto:bob.smith@gmail.com">M'envoyer un email</a></p> : rediriger vers un mail avec 'mailto:'
+  - <p><a href="tel:+3361020304">Me contacter par Téléphone</a></p> : rediriger vers un tel avec 'tel:'
+  - <p>Visiter notre <a href="https://facebook.com/wildcodeschool" title="titre">page facebook</a></p> : permets de mettre un titre a ton lien 
+  - <p>Visiter <a href="https://facebook.com/wildcodeschool" target="_blank">notre page facebook</a></p> : Tu peux spécifier comment ouvrir le lien grâce à l'attribut target.Par exemple, en donnant la valeur _blank, la page s'ouvrira dans un nouvel onglet 
+  - <p>Télécharger<a href="../assets/cv.pdf" download="cv-bob-smith.pdf">Mon CV</a></p> : Lorsque ton lien contient une ressource à télécharger, tu peux donner un nom de fichier d'enregistrement par défaut avec l'attribut download 
+  - 
+
+LES REGLES DE DIMENTIONS : 
+  - margin :  permets de placer un éléments mais les ecrases pour respecter la marge 
+  - border : permets de mettre une bordure autour des éléments 
+  - padding : permets d'expandre un élément 
+  
+
+
+LES UNITÉS RELATIVES 
+
+  - Vh (viewhight) est une unité de mesure qui s'addapte a la taille de la page a favoriser hauteur
+  - VW (view width) est une unité de mesure qui s'addapte a la taille de la page a favoriser largeur
+  - le % aussi est relatif et s'addapte au différentes tailles de pages 
+  
+
+NOTES JAVA-SCRIPT
+
+  - node script .js : pour lancer son js sur la console vscode
+  - console.log : permet d'afficher un message de la facon la plus simple
+  - console.info : pour afficher les informations
+  - console.error : afficher les erreurs 
+  - console.warn : afficher les avertissements
+  - // This is a comment : commentaire pour simple ligne 
+  - /* This comment
+    is on multiple lines */ : commentaire ligne multiple
+  - /**
+    * This comment
+    * is used for
+    * documentation
+    */  ------------------> : commentaire pour la documentations
+  - let myName="Bob" : variable 
+    console.log(myName) : application de la variable 
+    * print Bob *  ⚠️ Si je mets myName = Paul apres ma premiere variable c'est la seconde qui sera prise en compte   
+  - let & const : les deux type de variable les plus utiliser 
+  - let nomVariable = "Valeur"; : let represente une variabler que l'ont peut ré-assigner
+  - const nomVariable = "Valeur"; :est une variable que l'on ne peut pas ré-assigner.
+  - typeof : permet de voir le type de donné d'une valeur
+  - if (condition) {} : L'instruction if permet de vérifier une condition (précisée entre les parenthèses). Si la condition est évaluée comme vraie, le code est alors exécuté. Sinon, le code est ignoré.
+  - else {} : Nous pouvons ajouter une autre instruction, dans le cas où la condition est évaluée comme étant fausse.
+  - const userName = prompt("What's your name?"); : prompt est une fonction qui va afficher une boite de dialogue permettant à l'utilisateur d'entrer du texte.
+  - parseInt : Lors de l'utilisation de prompt, ce que l'utilisateur va taper dans la fenêtre de l'invite sera considéré comme une chaîne de caractères.
+    Si tu veux travailler avec des nombres, tu dois convertir la chaîne de caractères en un nombre. Pour cela, tu peux utiliser la fonction parseInt.
+  - const age = prompt("How old are you?");
+    console.log(typeof(age));
+    // String
+
+    const ageNumber = parseInt(age);
+    console.log(typeof(ageNumber));
+    // Number
+  - else if (condition) {// ...} : Tu dois écrire else if après un if et avant un else, et tu dois utiliser une condition entre parenthèses.
+  - const user = prompt("What's your name?");
+
+    if(user === "Paul"){
+	  console.log("Hello, Paul!");}
+    else if(user === "John"){
+	  console.log("Hello, John!");}
+    else if(user === "Ringo"){
+	  console.log("Hello, Ringo!");}
+    else{console.log("Sorry, not today...");}
+
+
+
+
+COMMANDE GIT
+
+  - git init : permet d'initialiser git dans le dossier
+  - ls -a permet d'afficher les dossier cacher (dossier . et .. sont les dossier de git )
+  - git switch -c nomdelabranch : permet de cree et switcher directement de brach
+  - git branch -m nomdelabranch : permet de bouger sur la branche que l'on souhaite
+  - git status : permet de voir sur quel branch on est actuellement et aussi voir les differents ficheirs en attente de commit
+  - git clone urlgit : permet de cloner un dossier depuis github (avec l url)
+  - git add nomdufichier : permet de mettre en attente le fichier avant envoi 
+  - git commit -m : permet de commit et mettre un commentaire avant l'envoi
+  - git push origin nomdelabranch : pour envoyer les fichier en attente sur github
+  - :wq : permet de sortir du terminal apres git revert HEAD 
+  - git revert HEAD : supprimer le dernier commit  
+  - git log --oneline : voir les commits et les hash 
+  - git revert <hash> : permet de supprimer un commit et tout ce qui a ete fais apres celui ci 
+  
+

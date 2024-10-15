@@ -1,0 +1,66 @@
+:root{
+
+  --back-color : #48B2B8;
+  
+}
+
+
+
+*{
+
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin:auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+
+
+
+
+
+.card{
+  background-color: var(--back-color);
+  width: 30vw;
+  height: 80vh;
+  align-items: center;
+justify-content: center;
+text-align: center;
+border-radius: 20px;
+box-shadow: 10px 7px 7px black;
+}
+
+.txt{
+margin: 25px;
+
+}
+
+.back-home{
+width:80px ;
+height: 35px;
+border-radius: 1rem;
+margin-top: 20px;
+margin-bottom: 20;
+}
+
+.pic{
+
+  background-image: url(EricCartman.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17vw;
+  height: 17vw;
+  background-color: black;
+  border-radius: 20%;
+  margin: auto;
+}
+
+h1, h2{
+margin: 10px;
+
+}
