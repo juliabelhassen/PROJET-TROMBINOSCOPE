@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-image: url(/images/Fantasy-Cloud-Sky-Landscape-In-Studio-Ghibli-Style-69077518-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-zone{
+  display: flex;                     
+  justify-content: center;           
+  align-items: center;               
+  
+  
+}
+
+.logo{
+  height: auto;
+  width: 80vw;
+  object-fit: cover;
+  
+}
+                     
+ul{
+  display: flex; 
+  flex-direction: column;                    
+  justify-content: center;           
+  align-items: center;               
+  list-style-type: none;  
+  padding: 0;                        
+  margin: 0;           
+}
+
+li{
+  margin: 20px ;
+  
+}
+
+img{
+  height: 150px ;
+  width: 150px;
+  border-radius: 20px;
+}
+img :hover{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre initiale légère */
+  transition: box-shadow 0.3s ease;
+}
+
+@media screen and (min-width: 370px){
+  ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 0px;
+    justify-content: center;
+
+  }
+  .imgs-zone{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  img{
+    height: 300px ;
+    width: 300px;
+    border-radius: 20px;
+  }
+}
