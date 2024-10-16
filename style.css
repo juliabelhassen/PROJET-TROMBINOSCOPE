@@ -111,16 +111,14 @@ h3 {
 .Laracroft img:hover {
   transform: scale(1.2);
 }
+
 .Tifa img:hover {
   transform: scale(1.2);
 }
-
-.Xiaoyu img:hover {
+.Aerith img:hover {
   transform: scale(1.2);
 }
 
-@media screen and (min-width: 400px) { 
-  .main { 
-    display: none; 
-  } 
+.RedXIII img:hover {
+  transform: scale(1.2);
 }
