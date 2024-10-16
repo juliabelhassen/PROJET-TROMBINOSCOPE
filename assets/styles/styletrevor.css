@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  background-color: rgba(251, 200, 46, 0.696);
+  justify-items: center;
+  align-items: center;
+}
+
+.firstsection {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  height: 22rem;
+  width: 16rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+header {
+  height: 4rem;
+  width: 14rem;
+}
+
+header img {
+  width: 16rem;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  opacity: 80%;
+}
+
+.name img {
+  height: 1.5rem;
+  width: 8rem;
+  padding-left: 24%;
+  padding-right: 20%;
+  margin: 0.2rem;
+  padding-top: 0.5rem;
+}
+
+p {
+  margin: 12px;
+  font-size: 0.8rem;
+  color: black;
+  text-align: center;
+  font-style: italic;
+}
+
+.thegame img {
+  height: 1.4rem;
+  width: 10rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.introduction {
+  margin: 1rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
