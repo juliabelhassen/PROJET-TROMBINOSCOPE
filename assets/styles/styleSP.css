@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: O;
+}
+body{
+  background-color: #36DFF9;
+}
+#title{
+text-align: center;
+padding: 3vh;
+gap: 3vh;
+}
+
+.character{
+background-color: white;
+
+width: 40vh;
+height: 40vh;
+border-radius: 1rem;
+}
+
+
+#theme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20vh;
+  margin: 20vh;
+}
+
+
+#name{
+text-align: end;
+
+
+}
+.name1{
+color: black;
+}
+
+
+
+
+
+#cartman-pic{
+  background-image: url(EricCartman.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+#kenny-pic{
+  background-image: url(KennyMcCormick.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+#kyle-pic{
+  background-image: url(KyleBroflovski.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+#stan-pic{
+  background-image: url(Hemp-stan.webp);
+  background-position: center;
+  background-size: 70%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+#tolkien-pic{
+  background-image: url(Token_Black2.webp.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+#heidi-pic{
+  background-image: url(HeidiTurnerHat.webp);
+  background-position: center;
+  background-size: 60%;
+  background-repeat:no-repeat ;
+  width: 40vh;
+height: 40vh;
+
+}
+
+
+
+
+
+#home{
+margin-top: 5vh;
+width: 100px;
+height: 50px;
+border-radius: 1rem;
+
+
+}
+
+
+
+
+@media screen and (min-width: 350px){
+  
+
+
+
+
+  #theme{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+}
+/*name*/
+
+#heidi{
+
+  position: relative;
+}
+#name-h{
+position: absolute;
+top: 10vh;
+right: -3vw;
+}
+
+#tolkien{
+
+  position: relative;
+}
+#name-t{
+position: absolute;
+top: 10vh;
+right: -3vw;
+}
+#stan{
+
+  position: relative;
+}
+#name-s{
+position: absolute;
+top: 10vh;
+right: -3vw;
+}
+#kyle{
+
+  position: relative;
+}
+#name-k{
+position: absolute;
+top: 10vh;
+right: -4.5vw;
+}
+#kenny{
+
+  position: relative;
+}
+#name-m{
+position: absolute;
+top: 10vh;
+right: -6vw;
+}
+#cartman{
+
+  position: relative;
+}
+#name-c{
+position: absolute;
+top: 10vh;
+right: -1.5vw;
+}
