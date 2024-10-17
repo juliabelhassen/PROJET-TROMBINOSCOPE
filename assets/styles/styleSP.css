@@ -44,7 +44,7 @@ color: black;
 
 
 #cartman-pic{
-  background-image: url(EricCartman.png);
+  background-image: url(/images/EricCartman.png);
   background-position: center;
   background-size: 70%;
   background-repeat:no-repeat ;
@@ -53,7 +53,7 @@ height: 40vh;
 
 }
 #kenny-pic{
-  background-image: url(KennyMcCormick.png);
+  background-image: url(/images/KennyMcCormick.png);
   background-position: center;
   background-size: 60%;
   background-repeat:no-repeat ;
@@ -62,7 +62,7 @@ height: 40vh;
 
 }
 #kyle-pic{
-  background-image: url(KyleBroflovski.png);
+  background-image: url(/images/KyleBroflovski.png);
   background-position: center;
   background-size: 70%;
   background-repeat:no-repeat ;
@@ -71,7 +71,7 @@ height: 40vh;
 
 }
 #stan-pic{
-  background-image: url(Hemp-stan.webp);
+  background-image: url(/images/Hemp-stan.webp);
   background-position: center;
   background-size: 70%;
   background-repeat:no-repeat ;
@@ -80,7 +80,7 @@ height: 40vh;
 
 }
 #tolkien-pic{
-  background-image: url(Token_Black2.webp.png);
+  background-image: url(/images/Token_Black2.webp.png);
   background-position: center;
   background-size: 60%;
   background-repeat:no-repeat ;
@@ -89,7 +89,7 @@ height: 40vh;
 
 }
 #heidi-pic{
-  background-image: url(HeidiTurnerHat.webp);
+  background-image: url(/images/HeidiTurnerHat.webp);
   background-position: center;
   background-size: 60%;
   background-repeat:no-repeat ;

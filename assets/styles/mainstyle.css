@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: O;}
+
+  body{
+    background-color: pink;
+    color: ;
+  }
+
+  .title{
+    text-align: center;
+    padding: 3vh;
+    gap: 3vh;
+    }
+    #home{
+      margin: 10px;
+    }
+    .pic{
+      background-color: white;
+      
+      width: 40vh;
+      height: 40vh;
+      border-radius: 1rem;
+      }
+
+      #theme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20vh;
+        margin: 20vh;
+      }
+
+      .name{
+        text-align: center;
+        margin-top: 10px;
+      }
+
+
+
+
+
+#sppic{
+background-image: url(/images/mainsouthpark.jpg);
+background-position: center;
+background-size: contain;
+
+}
+
+#sgpic{
+background-image: url(/images/mainghiblihomepage.jpg);
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#swpic{
+background-image: url(/images/mainstarwar.jpg);
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#mpic{
+background-image: url(/images/mainactors.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#vgpic{
+background-image: url(/images/mainpacmam.jpg);
+background-position: center;
+background-size: contain;
+
+}
+#lrpic{
+background-image: url(/images/mainlordofthering.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+
+
+@media screen and (min-width: 350px){
+  
+
+
+
+
+  #theme{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+}
+
