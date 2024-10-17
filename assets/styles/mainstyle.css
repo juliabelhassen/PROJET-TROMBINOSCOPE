@@ -4,36 +4,39 @@
   padding: O;}
 
   body{
-    background-color: rgba(27, 138, 10, 0.381);
+    background-color: burlywood;
   }
 
-  .title{
+  .title {
     text-align: center;
-    padding: 4rem;
-    gap: 4rem;
-    }
+    padding: 3rem;
+  }
 
-    .title img {
-      height: 6rem;
-      width: 30rem;
-    }
+  .title img {
+    height: 6rem;
+    width: 30rem;
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: none; 
+}
 
 
-    .pic{
-      background-color: white;
-      
+  .pic{
+    background-color: white;
       width: 40vh;
       height: 40vh;
       border-radius: 1rem;
       }
 
-      #theme{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20vh;
-        margin: 20vh;
-      }
+  #theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+    margin: 20vh;
+  }
 
       .name{
         text-align: center;
