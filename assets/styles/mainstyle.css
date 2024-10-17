@@ -4,18 +4,21 @@
   padding: O;}
 
   body{
-    background-color: pink;
-    color: ;
+    background-color: rgba(27, 138, 10, 0.381);
   }
 
   .title{
     text-align: center;
-    padding: 3vh;
-    gap: 3vh;
+    padding: 4rem;
+    gap: 4rem;
     }
-    #home{
-      margin: 10px;
+
+    .title img {
+      height: 6rem;
+      width: 30rem;
     }
+
+
     .pic{
       background-color: white;
       
@@ -74,7 +77,7 @@ background-size: contain;
 
 }
 #lrpic{
-background-image: url(/images/mainlordofthering.jpg);
+background-image: url(/images/lordoftheringmain.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -97,9 +100,6 @@ background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
   }
-
-
-
 
 }
 
