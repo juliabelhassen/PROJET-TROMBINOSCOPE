@@ -38,9 +38,9 @@ li{
   
 }
 
-img{
-  height: 150px ;
-  width: 150px;
+ul li img{
+  height: 11rem ;
+  width: 12rem;
   border-radius: 20px;
 }
 img :hover{

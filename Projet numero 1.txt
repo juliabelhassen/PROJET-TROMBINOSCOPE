@@ -1,0 +1,6 @@
+TROMBINOSCOPES :
+
+Les effets :
+- Le theme qui s'affiche en background quand on passe la souris dessus
+- Les noms superposes au photos 
+- Effet d'ombre sur la photo quand on passe la souris dessus

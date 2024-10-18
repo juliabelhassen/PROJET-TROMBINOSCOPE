@@ -1,7 +1,9 @@
 const articlss = document.querySelectorAll("h3");
-const imges = document.querySelectorAll("img");
+const imges = document.querySelectorAll(".actrImg");
 const hAa = document.querySelectorAll("h2");
-const bnt1 = document.querySelector("button");
+const bnt1 = document.querySelector(".homem");
+const mneubeurgr = document.querySelector(".imgmenu");
+const navbar = document.querySelector(".navbar");
 
 function closAll(index) {
   for (let i = 0; i < articlss.length; i++) {
@@ -10,6 +12,10 @@ function closAll(index) {
     }
   }
 }
+
+mneubeurgr.addEventListener("click", () => {
+  navbar.classList.toggle("mobil-menu");
+});
 
 function closAllI(index) {
   for (let i = 0; i < imges.length; i++) {
@@ -29,7 +35,6 @@ function closAllIh(index) {
 
 bnt1.addEventListener("click", () => {
   for (let i = 0; i < articlss.length; i++) {
-    console.log("coucou");
     articlss[i].style.display = "none";
     hAa[i].style.display = "block";
     imges[i].style.display = "block";
