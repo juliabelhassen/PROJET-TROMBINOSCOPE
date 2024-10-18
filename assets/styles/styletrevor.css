@@ -27,9 +27,9 @@ header img {
 }
 
 .name img {
-  height: 1.5rem;
-  width: 8rem;
-  padding-left: 24%;
+  height: 2rem;
+  width: 8.5rem;
+  padding-left: 22%;
   padding-right: 20%;
   margin: 0.2rem;
   padding-top: 0.5rem;
@@ -44,14 +44,13 @@ p {
 }
 
 .thegame img {
-  height: 1.4rem;
-  width: 10rem;
-  padding-left: 20%;
-  padding-right: 20%;
+  height: 1rem;
+  width: 5rem;
+  padding-left: 35%;
 }
 
 .introduction {
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
